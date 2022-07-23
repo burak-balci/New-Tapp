@@ -1,0 +1,21 @@
+{
+  "short_name": "New Tapp",
+  "name": "New Tab App",
+  "description": "Better new tab",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["management", "history", "storage"],
+
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "icons": {
+    "16": "newtapp16.png",
+    "32": "newtapp32.png",
+    "48": "newtapp48.png",
+    "128": "newtapp128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; script-src-elem 'self' 'unsafe-inline' "
+  }
+}
